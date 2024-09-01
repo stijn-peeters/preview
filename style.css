@@ -1,0 +1,226 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: #4b5320;
+  color: #b8a054;
+  position: relative;
+}
+.sticky-top {
+  position: fixed;
+  width: 50px;
+  bottom: 6vh;
+  right: 2vw;
+  z-index: 2;
+}
+section {
+  width: 1200px;
+  margin: auto;
+}
+
+/* Fullscreen Section */
+.fullscreen {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 4;
+  position: relative;
+  background: #4b5320;
+  width: 100%;
+}
+
+.fullscreen h1 {
+  font-size: 221px;
+  line-height: 199px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.062em;
+}
+
+/* Second Section with Cards */
+.cards-section {
+  padding: 60px 20px 10% 20px;
+  text-align: center;
+}
+
+.cards-section h2 {
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 37px;
+  letter-spacing: 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 33%;
+  flex-grow: 1;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 450px;
+  height: 55vh;
+  position: relative;
+}
+.card a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  opacity: 0.6;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+}
+.card:hover img {
+  opacity: 1;
+}
+.card h3 {
+  margin: auto 40px;
+  background: #4b5320;
+  padding: 30px 20px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  z-index: 1;
+  color: #b8a054;
+}
+
+/* Third and Fourth Sections */
+.text-and-grid-section {
+  padding: 150px 20px;
+  display: flex;
+  gap: 4%;
+  flex-wrap: wrap;
+}
+section.text-and-grid-section .text {
+  display: block;
+}
+section.text-and-grid-section > * {
+  max-width: 48%;
+}
+section.img-left {
+  flex-direction: row-reverse;
+}
+p.pre-title {
+  font-size: 18px;
+}
+.text-and-grid-section h3.title {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 20px 0px 10px;
+}
+h3.title + p {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  background-color: #ddd;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: bottom left;
+}
+.grid-container > div:nth-child(3) {
+  grid-area: 2/1/3/3;
+}
+
+/* Final Section */
+
+section.final-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+section.final-section img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+section.final-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #b8a054;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 100;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1500px) {
+  section {
+    width: 90vw;
+  }
+}
+@media (max-width: 1400px) {
+  .fullscreen h1 {
+    font-size: 16vw;
+    line-height: 90%;
+  }
+  .text-and-grid-section {
+    padding: 5vw 20px;
+  }
+}
+@media (max-width: 1210px) {
+  section.text-and-grid-section > * {
+    max-width: unset;
+  }
+}
+@media (max-width: 858px) {
+  .cards-container {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: unset;
+    height: 200px;
+    min-height: unset;
+  }
+}
+@media (max-width: 700px) {
+  section.final-section img {
+    max-width: 70%;
+  }
+  section.final-section a {
+    font-size: 20px;
+  }
+
+  section.final-section a svg {
+    max-width: 40px !important;
+  }
+}
