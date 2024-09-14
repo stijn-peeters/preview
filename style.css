@@ -200,6 +200,7 @@ section.final-section a {
   margin-bottom: 100px;
   border-radius: 30px;
   padding: 0px 15px 3px;
+  border: 1px solid;
 }
 
 @media (max-width: 1500px) {
