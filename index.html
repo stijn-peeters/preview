@@ -1,167 +1,146 @@
 <!DOCTYPE html>
 <html lang="nl-be">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Breakfast HQ</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body>
-    <!-- Sticky back to top -->
-    <div class="sticky-top">
-      <a href="#cards">
-        <svg fill="none" stroke="#b8a054" viewBox="-5 0 250 250">
-          <g
-            stroke="##b8a054"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="15"
-          >
-            <path
-              d="M120 224.2c55.23 0 100-44.77 100-100s-44.77-100-100-100-100 44.77-100 100 44.77 100 100 100Z"
-            />
-            <path d="m80 138.6 28.7-30.6a15.2 15.2 0 01 22.6 0L160 138.6" />
-          </g>
-        </svg>
-      </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breakfast HQ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <!-- Sticky back to top -->
+  <div class="sticky-top">
+    <a href="#cards">
+      <svg fill="none" stroke="#b8a054" viewBox="-5 0 250 250">
+        <g stroke="##b8a054" stroke-linecap="round" stroke-linejoin="round" stroke-width="15">
+          <path d="M120 224.2c55.23 0 100-44.77 100-100s-44.77-100-100-100-100 44.77-100 100 44.77 100 100 100Z" />
+          <path d="m80 138.6 28.7-30.6a15.2 15.2 0 01 22.6 0L160 138.6" />
+        </g>
+      </svg>
+    </a>
+  </div>
+  <!-- Fullscreen Section -->
+  <section class="fullscreen">
+    <h1>Breakfast<br />HQ</h1>
+  </section>
+
+  <!-- Second Section with Cards -->
+  <section class="cards-section" id="cards">
+    <h2>The Blog</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, laudantium doloremque autem ea delectus, veritatis
+      minus necessitatibus error nobis esse facilis dolores assumenda dolore blanditiis dignissimos ab distinctio
+      aliquam exercitationem adipisci consequatur vero sit? Quo voluptatibus amet eligendi maiores ab?</p>
+    <div class="cards-container">
+      <div class="card">
+        <a href="#blackbird">
+          <img src="./images/Blackbird 2.jpg" alt="Blackbird ontbijt" />
+          <h3>Blackbird</h3>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#hotel_de_orangerie">
+          <img src="./images/Hotel De Orangerie 1.webp" alt="Orangerie ontbijt" />
+          <h3>Orangerie</h3>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#kaffee_kamiel">
+          <img src="./images/Kaffee Kamiel 1.jpg" alt="Kaffee Kamiel ontbijt" />
+          <h3>Kaffee Kamiel</h3>
+        </a>
+      </div>
     </div>
-    <!-- Fullscreen Section -->
-    <section class="fullscreen">
-      <h1>Breakfast<br />HQ</h1>
-    </section>
+  </section>
 
-    <!-- Second Section with Cards -->
-    <section class="cards-section" id="cards">
-      <h2>The Blog</h2>
-      <div class="cards-container">
-        <div class="card">
-          <a href="#blackbird">
-            <img src="./images/Blackbird 2.jpg" alt="Blackbird ontbijt" />
-            <h3>Blackbird</h3></a
-          >
-        </div>
-        <div class="card">
-          <a href="#hotel_de_orangerie">
-            <img
-              src="./images/Hotel De Orangerie 1.webp"
-              alt="Orangerie ontbijt"
-            />
-            <h3>Orangerie</h3></a
-          >
-        </div>
-        <div class="card">
-          <a href="#kaffee_kamiel">
-            <img
-              src="./images/Kaffee Kamiel 1.jpg"
-              alt="Kaffee Kamiel ontbijt"
-            />
-            <h3>Kaffee Kamiel</h3></a
-          >
-        </div>
+  <!-- Third Section -->
+  <section class="text-and-grid-section img-right" id="blackbird">
+    <div class="text">
+      <p class="pre-title">breakfast, lunch and coffee bar</p>
+      <h3 class="title">Blackbird</h3>
+      <p>
+        De Blackbird in Brugge is een gezellige plek om met twee te gaan
+        ontbijten of brunchen. Reserveren is aangeraden. Fleur ontvangt je
+        steeds hartelijk en de bediening is vriendelijk.
+        <br /><br />
+        Het eten is lekker, vers en verrassend smaakvol. Best bereikbaar met
+        de fiets of te voet, hoewel er ook wel altijd parking in de buurt is.
+        <br /><br />
+        Wij zijn fan!
+        <br /><br />
+        <b>Lien & Saartje</b>
+        <br /><br />
+        favoriet van Lien: toast avocado<br />
+        favoriet van Saartje: de foodcoma achteraf ;)
+      </p>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="./images/Blackbird 1.jpg" alt="Latte met speculoos" />
       </div>
-    </section>
-
-    <!-- Third Section -->
-    <section class="text-and-grid-section img-right" id="blackbird">
-      <div class="text">
-        <p class="pre-title">breakfast, lunch and coffee bar</p>
-        <h3 class="title">Blackbird</h3>
-        <p>
-          De Blackbird in Brugge is een gezellige plek om met twee te gaan
-          ontbijten of brunchen. Reserveren is aangeraden. Fleur ontvangt je
-          steeds hartelijk en de bediening is vriendelijk.
-          <br /><br />
-          Het eten is lekker, vers en verrassend smaakvol. Best bereikbaar met
-          de fiets of te voet, hoewel er ook wel altijd parking in de buurt is.
-          <br /><br />
-          Wij zijn fan!
-          <br /><br />
-          <b>Lien & Saartje</b>
-          <br /><br />
-          favoriet van Lien: toast avocado<br />
-          favoriet van Saartje: de foodcoma achteraf ;)
-        </p>
+      <div class="grid-item">
+        <img src="./images/Blackbird 2.jpg" alt="Ontbijt" />
       </div>
-      <div class="grid-container">
-        <div class="grid-item">
-          <img src="./images/Blackbird 1.jpg" alt="Latte met speculoos" />
-        </div>
-        <div class="grid-item">
-          <img src="./images/Blackbird 2.jpg" alt="Ontbijt" />
-        </div>
-        <div class="grid-item">
-          <img
-            src="./images/Blackbird 3.jpg"
-            alt="Koffie en vers geperst sap"
-          />
-        </div>
+      <div class="grid-item">
+        <img src="./images/Blackbird 3.jpg" alt="Koffie en vers geperst sap" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Fourth Section -->
-    <section class="text-and-grid-section img-left" id="hotel_de_orangerie">
-      <div class="text">
-        <p class="pre-title">uitgebreid continentaal buffet</p>
-        <h3 class="title">Hotel De Orangerie</h3>
-        <p>
-          Ontbijten in De Orangerie geeft je het gevoel een gast in eigen stad
-          te zijn. Het buffet wordt regelmatig bijgevuld en het uitzicht is
-          heerlijk! De decoratie is magisch mooi.
-          <br /><br />
-          Om deze zaak te bereiken, kom je best te voet of met de fiets,
-          parkeren in een parkeergarage in de buurt kan, maar je zal sowieso
-          even moeten wandelen.
-          <br /><br />
-          Ze kennen ons hier al ;).
-          <br /><br />
+  <!-- Fourth Section -->
+  <section class="text-and-grid-section img-left" id="hotel_de_orangerie">
+    <div class="text">
+      <p class="pre-title">uitgebreid continentaal buffet</p>
+      <h3 class="title">Hotel De Orangerie</h3>
+      <p>
+        Ontbijten in De Orangerie geeft je het gevoel een gast in eigen stad
+        te zijn. Het buffet wordt regelmatig bijgevuld en het uitzicht is
+        heerlijk! De decoratie is magisch mooi.
+        <br /><br />
+        Om deze zaak te bereiken, kom je best te voet of met de fiets,
+        parkeren in een parkeergarage in de buurt kan, maar je zal sowieso
+        even moeten wandelen.
+        <br /><br />
+        Ze kennen ons hier al ;).
+        <br /><br />
 
-          <b>Lien & Saartje</b>
+        <b>Lien & Saartje</b>
 
-          <br /><br />
-          favoriet van Lien: de wafeltjes en dadels favoriet van Saartje: de
-          rösti met ui en spek & de grote aardbeien
-        </p>
+        <br /><br />
+        favoriet van Lien: de wafeltjes en dadels favoriet van Saartje: de
+        rösti met ui en spek & de grote aardbeien
+      </p>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="./images/Hotel De Orangerie 2.jpg" alt="Buffettafel" />
       </div>
-      <div class="grid-container">
-        <div class="grid-item">
-          <img src="./images/Hotel De Orangerie 2.jpg" alt="Buffettafel" />
-        </div>
-        <div class="grid-item">
-          <img
-            src="./images/Hotel De Orangerie 3.jpg"
-            alt="Tafel met uitzicht"
-          />
-        </div>
-        <div class="grid-item">
-          <img src="./images/Hotel De Orangerie 1.webp" alt="Service" />
-        </div>
+      <div class="grid-item">
+        <img src="./images/Hotel De Orangerie 3.jpg" alt="Tafel met uitzicht" />
       </div>
-    </section>
+      <div class="grid-item">
+        <img src="./images/Hotel De Orangerie 1.webp" alt="Service" />
+      </div>
+    </div>
+  </section>
 
-    <!-- Final Section -->
-    <section class="final-section">
-      <img
-        src="./images/footer_contact.png"
-        alt="Saartje en Lien"
-        width="800"
-      />
-      <a
-        href="mailto:pwdshx7yhp@privaterelay.appleid.com?subject=Mailtje%20van%20Breakfast%20HQ&body=Hey"
-      >
-        contact us
-      </a>
-    </section>
-  </body>
+  <!-- Final Section -->
+  <section class="final-section">
+    <img src="./images/footer_contact.png" alt="Saartje en Lien" width="800" />
+    <a href="mailto:pwdshx7yhp@privaterelay.appleid.com?subject=Mailtje%20van%20Breakfast%20HQ&body=Hey">
+      contact us
+    </a>
+  </section>
+</body>
+
 </html>
