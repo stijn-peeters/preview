@@ -196,6 +196,10 @@ section.final-section a {
   line-height: 40px;
   font-weight: 100;
   margin-bottom: 100px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 30px;
+  padding: 5px 15px;
 }
 
 @media (max-width: 1500px) {
