@@ -195,11 +195,11 @@ section.final-section a {
   font-size: 24px;
   line-height: 40px;
   font-weight: 100;
-  margin-bottom: 100px;
   width: fit-content;
   margin: auto;
+  margin-bottom: 100px;
   border-radius: 30px;
-  padding: 5px 15px;
+  padding: 0px 15px 3px;
 }
 
 @media (max-width: 1500px) {
