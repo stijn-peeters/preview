@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet" />
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -45,6 +46,11 @@
 </head>
 
 <body>
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet" type="text/css" />
+  </noscript>
+
   <!-- Sticky back to top -->
   <div class="sticky-top">
     <a href="#cards" aria-label="Back to top">
@@ -163,7 +169,8 @@
   <!-- Final Section -->
   <section class="final-section">
     <img src="./images/footer_contact.png" alt="Saartje en Lien" width="800" />
-    <a href="mailto:pwdshx7yhp@privaterelay.appleid.com?subject=Mailtje%20van%20Breakfast%20HQ&body=Hey" title="Contact us">
+    <a href="mailto:pwdshx7yhp@privaterelay.appleid.com?subject=Mailtje%20van%20Breakfast%20HQ&body=Hey"
+      title="Contact us">
       contact us
     </a>
   </section>
